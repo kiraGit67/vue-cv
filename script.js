@@ -18,6 +18,7 @@ const app = Vue.createApp({
         dateOfBirth: "03.02.1967",
         locationOfBirth: "Essen",
         nationality: "deutsch",
+        photoSrc: "img/kirsten_mail.jpg",
       },
     };
   },
