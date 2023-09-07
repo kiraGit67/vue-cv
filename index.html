@@ -26,7 +26,19 @@
                     :title="personalData.firstName + ' ' + personalData.lastName + ', ' + personalData.title"></div>
         </header>
         <main>
-
+            <h2>{{h2positions}}</h2>
+            <h3>Angestellte Tätigkeiten</h3>
+            <div class="job-container" v-for="job in dependentJobs" :key="job.id">
+                <div class="duration-column">
+                    <p>{{job.duration}}</p>
+                </div>
+                <div class="job-column">
+                    <p><strong>{{job.position}}</strong> bei <strong>{{job.company}}</strong><br />{{job.address}}</p>
+                    <ul class="task-list">
+                        <li v-for="task in job.tasks" :key="task">{{task}}</li>
+                    </ul>
+                </div>
+            </div>
         </main>
     </div>
     <script src="vue.js"></script>
