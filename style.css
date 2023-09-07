@@ -49,6 +49,28 @@ header img {
   outline: 1px solid lightgrey;
 }
 
+h2,
+h3 {
+  font-weight: 500;
+  color: #000066;
+}
+
+strong {
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: #000033;
+}
+
+.duration-column {
+  background-color: rgba(0, 0, 51, 0.05);
+  color: #000033;
+  padding: 0.1rem 0 0.1rem 0.5rem;
+}
+
+.task-list {
+  padding-left: 1.25rem;
+}
+
 @media screen and (min-width: 768px) {
   header {
     flex-direction: row;
@@ -62,6 +84,17 @@ header img {
       white 55% 56.5%,
       rgba(0, 0, 0, 0.05) 56.5%
     );
+  }
+
+  .job-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    border-bottom: 1px dotted rgba(0, 0, 51, 0.25);
+  }
+
+  .duration-column {
+    padding: 0 0 0 0.5rem;
   }
 }
 
