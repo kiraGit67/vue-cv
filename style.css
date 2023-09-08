@@ -50,9 +50,17 @@ header img {
 }
 
 h2,
-h3 {
+h3,
+h5 {
   font-weight: 500;
   color: #000066;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 strong {
