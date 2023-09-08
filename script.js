@@ -142,6 +142,17 @@ const app = Vue.createApp({
           ],
         },
       ],
+      h3apprenticeship: "Berufs-Ausbildung",
+      apprenticeships: [
+        {
+          id: 1,
+          duration: "09/1987 - 05/1990",
+          title: "Druckvorlagenherstellerin, Fachrichtung Reproretusche",
+          company: "Hilpert GmbH & Co.KG",
+          address: "Girardetstraße 58-64, 45131 Essen",
+          finalNote: 2.0,
+        },
+      ],
     };
   },
 }).mount("#app");
