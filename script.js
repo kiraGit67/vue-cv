@@ -20,6 +20,7 @@ const app = Vue.createApp({
         nationality: "deutsch",
         photoSrc: "img/kirsten_mail.jpg",
       },
+      h3jobs: "Angestellte Tätigkeiten",
       dependentJobs: [
         {
           id: 1,
@@ -66,6 +67,78 @@ const app = Vue.createApp({
             "Bildbearbeitung",
             "Farbkorrekturen",
             "Originalmontage bis zum Endfilm",
+          ],
+        },
+      ],
+      h3free: "Freiberufliche Tätigkeiten",
+      freeJobs: [
+        {
+          id: 1,
+          duration: "seit 2008",
+          position: "Erstellung von Websites und Webshops unter Einsatz von ",
+          company: "",
+          tasks: [
+            "WordPress und WooCommerce",
+            "Elementor",
+            "Gutenberg Editor",
+            "GREYD Suite",
+          ],
+        },
+        {
+          id: 2,
+          duration: "05/2003 - 07/2004",
+          position: "Gestaltung und Erstellung von Foldern, Katalogen u. ä.",
+          company:
+            "MIIX - Merchandising, Incentives, Internet Exchange, Bottrop-Kirchhellen",
+          tasks: [],
+        },
+        {
+          id: 3,
+          duration: "1998 - 2004",
+          position: "regelmäßige Gestaltung der Clubzeitschrift",
+          company: "Tanzsportclub Rot-Silber Witten",
+          tasks: [
+            "Bildeingabe und –bearbeitung",
+            "Erstellung von Grafiken und Logos",
+            "Seitenlayout",
+          ],
+        },
+        {
+          id: 4,
+          duration: "09/1998 - 10/1998",
+          position: "DTP-Kraft",
+          company: "Werbeagentur Pada rii, Essen",
+          tasks: [
+            "Gestaltung und Layout von Reiseprospekten",
+            "Bildbearbeitung",
+            "Seitenlayout",
+          ],
+        },
+      ],
+      h3practica: "Betriebs-Praktika",
+      praktika: [
+        {
+          id: 1,
+          duration: "01/1998 - 02/1998",
+          title: "Ausbildungsbegleitendes Praktikum",
+          company: "W+B GmbH",
+          address: "Grafenberger Allee 32, 40237 Düsseldorf",
+          tasks: ["Bildbearbeitung", "Bild-Text-Composing", "Layout"],
+        },
+        {
+          id: 2,
+          duration: "05/2002",
+          title: "Ausbildungsbegleitendes Praktikum",
+          company:
+            "Abteilung Fotografie und Mediendesign, Berufsgenossenschaftliche Kliniken Bergmannsheil, Universitätsklinik",
+          address: "Bürkle-de-la-Camp-Platz 1, 44789 Bochum",
+          tasks: [
+            "Bildbearbeitung mit Photoshop",
+            "Layout und Setzen von Postern, Faltblättern, Flyern mit PageMaker",
+            "Anfertigen von Illustrationen und Logos als Vektorgrafik",
+            "Erstellen von Präsentationen mit Powerpoint",
+            "Videofilm, Videonachbearbeitung für medizinische Dokumentationen",
+            "Webdesign mittels Dreamweaver",
           ],
         },
       ],
