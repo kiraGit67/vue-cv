@@ -55,6 +55,30 @@
                 </div>
             </div>
             <h3>{{h3practica}}</h3>
+            <div class="job-container" v-for="praktikum in praktika" :key="praktikum.id">
+                <div class="duration-column">
+                    <p>{{ praktikum.duration }}</p>
+                </div>
+                <div class="job-column">
+                    <p>{{ praktikum.title }},</p>
+                    <p><strong>{{ praktikum.company }}</strong>, {{ praktikum.address }}</p>
+                    <ul class="task-list">
+                        <li v-for="task in praktikum.tasks" :key="task">{{ task }}</li>
+                    </ul>
+                </div>
+            </div>
+            <h3>{{ h3apprenticeship }}</h3>
+            <div class="job-container" v-for="apprenticeship in apprenticeships" :key="apprenticeship.id">
+                <div class="duration-column">
+                    <p>{{ apprenticeship.duration }}</p>
+                </div>
+                <div class="job-column">
+                    <h5>{{ apprenticeship.title }}</h5>
+                    <p><strong>{{ apprenticeship.company }}</strong>, {{ apprenticeship.address }}</p>
+                    <p v-if="apprenticeship.finalNote !== 0 && apprenticeship.finalNote !== ''">Abschluss-Note: {{
+                        apprenticeship.finalNote }}</p>
+                </div>
+            </div>
         </main>
     </div>
     <script src="vue.js"></script>
