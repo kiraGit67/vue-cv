@@ -75,8 +75,22 @@
                 <div class="job-column">
                     <h5>{{ apprenticeship.title }}</h5>
                     <p><strong>{{ apprenticeship.company }}</strong>, {{ apprenticeship.address }}</p>
-                    <p v-if="apprenticeship.finalNote !== 0 && apprenticeship.finalNote !== ''">Abschluss-Note: {{
-                        apprenticeship.finalNote }}</p>
+                    <cite v-if="apprenticeship.finalNote !== 0 && apprenticeship.finalNote !== ''">Abschluss-Note: {{
+                        apprenticeship.finalNote }}</cite>
+                </div>
+            </div>
+            <h3>{{ h3study }}</h3>
+            <div class="job-container" v-for="study in studies" :key="study.id">
+                <div class="duration-column">
+                    <p>{{ study.duration }}</p>
+                </div>
+                <div class="job-column">
+                    <h5>{{ study.title }}</h5>
+                    <p><strong>{{ study.institute }}</strong></p>
+                    <ul class="task-list">
+                        <li v-for="skill in study.skills" :key="skill">{{ skill }}</li>
+                    </ul>
+                    <cite v-if="study.finalNote !== ''">Abschluss-Note: {{ study.finalNote }}</cite>
                 </div>
             </div>
         </main>
