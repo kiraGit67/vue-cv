@@ -56,6 +56,10 @@ h5 {
   color: #000066;
 }
 
+h3 {
+  font-size: 1.35rem;
+}
+
 h5 {
   font-size: 1.2rem;
   line-height: 1;
@@ -114,6 +118,10 @@ strong {
     grid-template-columns: 1fr 3fr;
     gap: 1rem;
     border-bottom: 1px dotted rgba(0, 0, 51, 0.25);
+  }
+
+  .job-container.first {
+    border-top: 1px dotted rgba(0, 0, 51, 0.25);
   }
 
   .duration-column {
