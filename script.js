@@ -142,6 +142,7 @@ const app = Vue.createApp({
           ],
         },
       ],
+      h2education: "Ausbildung",
       h3apprenticeship: "Berufs-Ausbildung",
       apprenticeships: [
         {
