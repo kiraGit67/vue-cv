@@ -33,7 +33,9 @@
                     <p>{{job.duration}}</p>
                 </div>
                 <div class="job-column">
-                    <p><strong>{{job.position}}</strong> bei <strong>{{job.company}}</strong><br />{{job.address}}</p>
+                    <p style="padding-top: 0.5rem;"><strong>{{job.position}}</strong> bei
+                        <strong>{{job.company}}</strong><br />{{job.address}}
+                    </p>
                     <ul class="task-list">
                         <li v-for="task in job.tasks" :key="task">{{task}}</li>
                     </ul>
@@ -45,7 +47,7 @@
                     <p>{{job.duration}}</p>
                 </div>
                 <div class="job-column">
-                    <p>
+                    <p style="padding-top: 0.5rem;">
                         {{job.position}}
                         <span v-if="job.company !== ''"><br /><strong>{{job.company}}</strong></span>
                     </p>
@@ -60,7 +62,7 @@
                     <p>{{ praktikum.duration }}</p>
                 </div>
                 <div class="job-column">
-                    <p>{{ praktikum.title }},</p>
+                    <p style="padding-top: 0.5rem;">{{ praktikum.title }},</p>
                     <p><strong>{{ praktikum.company }}</strong>, {{ praktikum.address }}</p>
                     <ul class="task-list">
                         <li v-for="task in praktikum.tasks" :key="task">{{ task }}</li>
@@ -85,12 +87,25 @@
                     <p>{{ study.duration }}</p>
                 </div>
                 <div class="job-column">
-                    <h5>{{ study.title }}</h5>
+                    <h5 style="margin-top: 1rem;">{{ study.title }}</h5>
                     <p><strong>{{ study.institute }}</strong></p>
-                    <ul class="task-list">
+                    <ul class="task-list" v-if="study.skills !== []">
                         <li v-for="skill in study.skills" :key="skill">{{ skill }}</li>
                     </ul>
-                    <cite v-if="study.finalNote !== ''">Abschluss-Note: {{ study.finalNote }}</cite>
+                    <cite v-if="study.finalNote !== '' && study.finalNote !== 0">Abschluss-Note: {{ study.finalNote
+                        }}</cite>
+                </div>
+            </div>
+            <h3>{{ h2school }}</h3>
+            <div class="job-container" v-for="school in schools" :key="school.id">
+                <div class="duration-column">
+                    <p>{{ school.duration }}</p>
+                </div>
+                <div class="job-column">
+                    <h5 style="margin-top: 1rem;" v-if="school.title !== ''">{{ school.title }}</h5>
+                    <p><strong>{{ school.school }}</strong></p>
+                    <cite v-if="school.finalNote !== 0 && school.finalNote !== ''">Abschluss-Note: {{ school.finalNote
+                        }}</cite>
                 </div>
             </div>
         </main>
