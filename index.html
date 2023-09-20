@@ -100,7 +100,8 @@
                 </div>
             </div>
             <h2>{{ h2school }}</h2>
-            <div class="job-container" :class="{'first':school.id===1}" v-for="school in schools" :key="school.id">
+            <div class="job-container" :class="[{'first':school.id===1}, {'centered':school.id===2}]"
+                v-for="school in schools" :key="school.id">
                 <div class="duration-column">
                     <p>{{ school.duration }}</p>
                 </div>
@@ -109,6 +110,36 @@
                     <p><strong>{{ school.school }}</strong></p>
                     <cite v-if="school.finalNote !== 0 && school.finalNote !== ''">Abschluss-Note: {{ school.finalNote
                         }}</cite>
+                </div>
+            </div>
+            <h2>{{ h2skills }}</h2>
+            <div class="job-container centered" v-for="skill in skills" :key="skill.id" :class="{'first':skill.id===1}">
+                <div class="duration-column">
+                    <p><strong>{{ skill.name }}</strong></p>
+                </div>
+                <div class="job-column">
+                    <p>{{ skill.description }}</p>
+                    <a :href="skill.link" v-if="skill.link!==''">{{ skill.link }}</a>
+                </div>
+            </div>
+            <h2>{{ h2profiles }}</h2>
+            <div class="job-container centered" v-for="profile in profiles" :key="profile.id"
+                :class="{'first':profile.id===1}">
+                <div class="duration-column">
+                    <p><strong>{{ profile.name }}</strong></p>
+                </div>
+                <div class="job-column">
+                    <p><strong><a :href="profile.link">{{ profile.link }}</a></strong></p>
+                </div>
+            </div>
+            <h2>{{ h2hobbies }}</h2>
+            <div class="job-container" v-for="hobby in hobbies" :key="hobby.id" :class="{'first':hobby.id===1}">
+                <div class="duration-column">
+                    <p>{{ hobby.duration }}</p>
+                </div>
+                <div class="job-column">
+                    <h5 style="margin-top:1rem;">{{ hobby.name }}</h5>
+                    <p><strong>{{ hobby.description }}</strong></p>
                 </div>
             </div>
         </main>
