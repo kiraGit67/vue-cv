@@ -15,7 +15,8 @@
             <div id="personalia">
                 <h1>{{h1text}}</h1>
                 <h5>{{personalData.firstName}} {{personalData.lastName}}<br />{{ personalData.title }}</h5>
-                <p>{{personalData.phone}}<br />{{personalData.mobile}}<br />{{personalData.email}}</p>
+                <p>{{personalData.phone}}<br />{{personalData.mobile}}<br /><a :href="mailto">{{personalData.email}}</a>
+                </p>
                 <p>{{personalData.address.street}}<br />{{personalData.address.zipcode}} {{personalData.address.city}}
                 </p>
                 <p>Geboren am: {{personalData.dateOfBirth}}</p>
