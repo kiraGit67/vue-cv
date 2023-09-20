@@ -62,17 +62,19 @@ h3 {
 
 h5 {
   font-size: 1.2rem;
-  line-height: 1;
+  line-height: 1.35;
+  margin-top: 1rem;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.job-column {
-  padding: 0.1rem 0 0.1rem 0.5rem;
+p {
+  margin-block: 0.35rem;
+  line-height: 1.5;
 }
 
-.job-column > p {
-  margin-block: 0.35rem;
+.job-column {
+  padding: 0.1rem 0 0.1rem 0.5rem;
 }
 
 .job-column > cite {
@@ -93,8 +95,13 @@ strong {
 }
 
 .task-list {
-  padding-left: 0;
+  padding-left: 1rem;
   list-style-type: none;
+}
+
+.task-list > li {
+  text-indent: -1rem;
+  line-height: 1.5;
 }
 
 .task-list > li::before {
@@ -115,6 +122,29 @@ a:hover {
   color: #0000cc;
   background-color: rgba(0, 0, 51, 0.05);
   transform: translateX(0.5rem);
+}
+
+#personalia > p > a:hover {
+  background-color: transparent;
+  transform: none;
+}
+
+.job-container img {
+  width: 100%;
+  max-width: 7.5rem;
+  display: block;
+  margin-inline: auto;
+  margin-block: 0.75rem;
+}
+
+h5.capp-color,
+a.capp-color:hover {
+  color: #389458;
+}
+
+h5.sgev-color,
+a.sgev-color:hover {
+  color: #06a4d8;
 }
 
 @media screen and (min-width: 768px) {
@@ -145,6 +175,13 @@ a:hover {
 
   .job-container.centered {
     align-items: center;
+  }
+
+  .job-container img {
+    width: 100%;
+    max-width: 7.5rem;
+    display: block;
+    margin-inline: auto;
   }
 }
 
