@@ -403,6 +403,7 @@ const app = Vue.createApp({
       hobbies: [
         {
           id: 1,
+          duration: "seit 07/2018",
           name: "Jazz Dance & Jazz Ballett",
           description:
             "Im Ballett-Studio Dance-City, Am Markt 10, 44575 Castrop-Rauxel",
