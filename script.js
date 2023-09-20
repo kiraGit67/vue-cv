@@ -369,6 +369,45 @@ const app = Vue.createApp({
           finalNote: 1.2,
         },
       ],
+      h2skills: "Besondere Kenntnisse",
+      skills: [
+        {
+          id: 1,
+          name: "Video-Schnitt und Bearbeitung",
+          description:
+            "Erstellung von Musik-Videos mit Hilfe des Videoschnitt-Programms DaVinci17 für eigenen YouTube-Kanal",
+          link: "https://www.youtube.com/c/RelaxMusic21",
+        },
+        {
+          id: 2,
+          name: "Fotorealistisches Malen und Zeichnen",
+          description:
+            "mit Blei- und Buntstift- sowie Aquarell-Technik von Landschaften, Blumen, Tieren und Gebäuden",
+          link: "",
+        },
+      ],
+      h2profiles: "Profile",
+      profiles: [
+        {
+          id: 1,
+          name: "GitHub",
+          link: "https://github.com/kiraGit67?tab=repositories",
+        },
+        {
+          id: 2,
+          name: "LinkedIn",
+          link: "https://www.linkedin.com/in/kirsten-anders/",
+        },
+      ],
+      h2hobbies: "Interessen & Hobbies",
+      hobbies: [
+        {
+          id: 1,
+          name: "Jazz Dance & Jazz Ballett",
+          description:
+            "Im Ballett-Studio Dance-City, Am Markt 10, 44575 Castrop-Rauxel",
+        },
+      ],
     };
   },
 }).mount("#app");
