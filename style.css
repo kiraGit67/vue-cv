@@ -67,6 +67,10 @@ h5 {
   padding-bottom: 0;
 }
 
+.job-column {
+  padding: 0.1rem 0 0.1rem 0.5rem;
+}
+
 .job-column > p {
   margin-block: 0.35rem;
 }
@@ -139,8 +143,8 @@ a:hover {
     border-top: 1px dotted rgba(0, 0, 51, 0.25);
   }
 
-  .duration-column {
-    padding: 0 0 0 0.5rem;
+  .job-container.centered {
+    align-items: center;
   }
 }
 
