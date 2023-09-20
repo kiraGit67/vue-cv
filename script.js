@@ -409,6 +409,33 @@ const app = Vue.createApp({
             "Im Ballett-Studio Dance-City, Am Markt 10, 44575 Castrop-Rauxel",
         },
       ],
+      h2projects: "Projekte",
+      projects: [
+        {
+          id: 1,
+          imgSource: "img/capp-logo.svg",
+          name: "CAPP Car Sharing App",
+          description:
+            "Abschlussprojekt im Rahmen meiner Fortbildung bei den Coding Bootcamps Europe, \nerstellt mit Vue.js, Pinia Store, Supabase Datenbank-Technik, \n gemeinsam mit 3 weiteren Bootcamp-Kollegen",
+          link: "https://capp-app.netlify.app/",
+        },
+        {
+          id: 2,
+          imgSource: "img/sgev-logo.svg",
+          name: "Seniorenglück e.V. - Lebenshilfe Dortmund",
+          description:
+            "Webseite für den gemeinnützigen Verein Seniorenglück e.V., der bedürftige Seniorinnen und Senioren finanziell und sozial unterstützt, \nerstellt mit WordPress 6.0, GREYD.Suite und Gutenberg Editor",
+          link: "https://seniorenglueck-lebenshilfe.de/",
+        },
+        {
+          id: 3,
+          imgSource: "img/amelie-logo-black.svg",
+          name: "Amélie Brautmoden GmbH",
+          description:
+            "Webshop für die Amélie Brautmoden GmbH, \nerstellt mit WordPress 6.0, WooCommerce",
+          link: "https://www.ameliebridal.de/",
+        },
+      ],
     };
   },
 }).mount("#app");
