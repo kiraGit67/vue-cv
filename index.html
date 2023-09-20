@@ -90,7 +90,7 @@
                     <p>{{ study.duration }}</p>
                 </div>
                 <div class="job-column">
-                    <h5 style="margin-top: 1rem;">{{ study.title }}</h5>
+                    <h5>{{ study.title }}</h5>
                     <p><strong>{{ study.institute }}</strong></p>
                     <ul class="task-list" v-if="study.skills !== []">
                         <li v-for="skill in study.skills" :key="skill">{{ skill }}</li>
@@ -100,20 +100,20 @@
                 </div>
             </div>
             <h2>{{ h2school }}</h2>
-            <div class="job-container" :class="[{'first':school.id===1}, {'centered':school.id===2}]"
-                v-for="school in schools" :key="school.id">
+            <div class="job-container" :class="{'first':school.id===1}" v-for="school in schools" :key="school.id">
                 <div class="duration-column">
                     <p>{{ school.duration }}</p>
                 </div>
                 <div class="job-column">
-                    <h5 style="margin-top: 1rem;" v-if="school.title !== ''">{{ school.title }}</h5>
+                    <h5 v-if="school.title !== ''">{{ school.title }}</h5>
                     <p><strong>{{ school.school }}</strong></p>
                     <cite v-if="school.finalNote !== 0 && school.finalNote !== ''">Abschluss-Note: {{ school.finalNote
                         }}</cite>
                 </div>
             </div>
             <h2>{{ h2skills }}</h2>
-            <div class="job-container centered" v-for="skill in skills" :key="skill.id" :class="{'first':skill.id===1}">
+            <div class="job-container" v-for="skill in skills" :key="skill.id"
+                :class="[{'first':skill.id===1},{'centered':skill.id===2}]">
                 <div class="duration-column">
                     <p><strong>{{ skill.name }}</strong></p>
                 </div>
@@ -138,7 +138,7 @@
                     <p>{{ hobby.duration }}</p>
                 </div>
                 <div class="job-column">
-                    <h5 style="margin-top:1rem;">{{ hobby.name }}</h5>
+                    <h5>{{ hobby.name }}</h5>
                     <p><strong>{{ hobby.description }}</strong></p>
                 </div>
             </div>
@@ -148,9 +148,11 @@
                     <img :src="project.imgSource" :alt="project.name" :title="project.name">
                 </div>
                 <div class="job-column">
-                    <h5 style="margin-block:.75rem;">{{project.name}}</h5>
+                    <h5 style="margin-block:.75rem;"
+                        :class="[{'capp-color':project.id===1}, {'sgev-color':project.id===2}]">{{project.name}}</h5>
                     <p>{{ project.description }}</p>
-                    <a :href="project.link" target="_blank">{{ project.link }}</a>
+                    <a :href="project.link" target="_blank"
+                        :class="[{'capp-color':project.id===1}, {'sgev-color':project.id===2}]">{{ project.link }}</a>
                 </div>
             </div>
         </main>
