@@ -438,4 +438,9 @@ const app = Vue.createApp({
       ],
     };
   },
+  computed: {
+    mailto() {
+      return "mailto:" + this.personalData.email;
+    },
+  },
 }).mount("#app");
