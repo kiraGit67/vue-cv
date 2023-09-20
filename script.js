@@ -429,7 +429,7 @@ const app = Vue.createApp({
         },
         {
           id: 3,
-          imgSource: "img/amelie-logo-black.svg",
+          imgSource: "img/amelie-logo-black.png",
           name: "Amélie Brautmoden GmbH",
           description:
             "Webshop für die Amélie Brautmoden GmbH, \nerstellt mit WordPress 6.0, WooCommerce",
