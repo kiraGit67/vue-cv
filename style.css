@@ -98,6 +98,21 @@ strong {
   color: #000099;
 }
 
+a {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #000099;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+a:hover {
+  color: #0000cc;
+  background-color: rgba(0, 0, 51, 0.05);
+  transform: translateX(0.5rem);
+}
+
 @media screen and (min-width: 768px) {
   header {
     flex-direction: row;
