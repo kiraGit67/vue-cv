@@ -112,6 +112,19 @@
                         }}</cite>
                 </div>
             </div>
+            <h2>{{ h2lang }}</h2>
+            <p>Nach dem gemeinsamen europäischen Referenzrahmen für Sprachen (GER)</p>
+            <div class="job-container" v-for="language in languages" :key="language.id">
+                <div class="duration-column">
+                    <p><strong>{{ language.language }}</strong></p>
+                </div>
+                <div class="job-column">
+                    <h5>{{ language.ger }}</h5>
+                    <ul class="task-list">
+                        <li v-for="item in language.description" :key="item">{{ item }}</li>
+                    </ul>
+                </div>
+            </div>
             <h2>{{ h2skills }}</h2>
             <div class="job-container" v-for="skill in skills" :key="skill.id"
                 :class="[{'first':skill.id===1},{'centered':skill.id===2}]">
