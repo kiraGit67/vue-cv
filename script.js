@@ -369,6 +369,33 @@ const app = Vue.createApp({
           finalNote: 1.2,
         },
       ],
+      h2lang: "Sprachen",
+      languages: [
+        {
+          id: 1,
+          language: "Deutsch",
+          ger: "C1 - Kompetente Sprachverwendung",
+          description: [
+            "kann ein breites Spektrum anspruchsvoller Texte verstehen",
+            "hohes Maß an grammatikalischer Korrektheit",
+            "beherrschst einen großen Wortschatz",
+            "kann beim Lesen komplexe Texte im Detail verstehen, auch wenn diese nicht dem eigenen Spezialgebiet angehören",
+            "kann gesprochene Sprache verstehen, auch wenn diese nicht klar strukturiert ist und wenn Zusammenhänge nicht explizit ausgedrückt sind",
+          ],
+        },
+        {
+          id: 2,
+          language: "Englisch",
+          ger: "B1 - Selbständige Sprachverwendung",
+          description: [
+            "kann sich in der Regel in vertrauten Situationen ausreichend korrekt verständigen",
+            "passable Beherrschung grammatikalischer Strukturen",
+            "solider Wortschatz",
+            "kann beim Lesen unkomplizierte Sachtexte und Korrespondenz recht gut verstehen, in denen sehr gebräuchliche Alltags- oder Berufssprache vorkommt, z. B. Briefe oder Informationsbroschüren",
+            "kann in der Regel bei Gesprächen oder Radionachrichten die Hauptpunkte verstehen, sofern deutlich gesprochen wird",
+          ],
+        },
+      ],
       h2skills: "Besondere Kenntnisse",
       skills: [
         {
