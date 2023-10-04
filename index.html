@@ -35,7 +35,10 @@
                 </div>
                 <div class="job-column">
                     <p style="padding-top: 0.5rem;"><strong>{{job.position}}</strong> bei
-                        <strong>{{job.company}}</strong><br />{{job.address}}
+                        <strong v-if="job.certificate"><a class="cert-link" :href="job.certificate"
+                                :title="job.position + '@' + job.company" target="_blank">{{job.company}}</a></strong>
+                        <strong v-else>{{job.company}}</strong>
+                        <br />{{job.address}}
                     </p>
                     <ul class="task-list">
                         <li v-for="task in job.tasks" :key="task">{{task}}</li>
@@ -50,7 +53,12 @@
                 <div class="job-column">
                     <p style="padding-top: 0.5rem;">
                         {{job.position}}
-                        <span v-if="job.company !== ''"><br /><strong>{{job.company}}</strong></span>
+                        <span v-if="job.company !== ''"><br />
+                            <strong v-if="job.certificate"><a :href="job.certificate"
+                                    :title="job.position + '@' + job.company" target="_blank"
+                                    class="cert-link">{{job.company}}</a></strong>
+                            <strong v-else>{{job.company}}</strong>
+                        </span>
                     </p>
                     <ul class="task-list" v-if="job.tasks.length !== 0">
                         <li v-for="task in job.tasks" :key="task">{{task}}</li>
@@ -65,7 +73,13 @@
                 </div>
                 <div class="job-column">
                     <p style="padding-top: 0.5rem;">{{ praktikum.title }},</p>
-                    <p><strong>{{ praktikum.company }}</strong>, {{ praktikum.address }}</p>
+                    <p>
+                        <strong v-if="praktikum.certificate"><a :href="praktikum.certificate"
+                                :title="praktikum.title + '@' + praktikum.company" target="_blank"
+                                class="cert-link">{{praktikum.company}}</a></strong>
+                        <strong v-else>{{ praktikum.company }}</strong>,
+                        {{ praktikum.address }}
+                    </p>
                     <ul class="task-list">
                         <li v-for="task in praktikum.tasks" :key="task">{{ task }}</li>
                     </ul>
@@ -79,7 +93,10 @@
                     <p>{{ apprenticeship.duration }}</p>
                 </div>
                 <div class="job-column">
-                    <h5>{{ apprenticeship.title }}</h5>
+                    <h5 v-if="apprenticeship.certificate"><a :href="apprenticeship.certificate"
+                            :alt="apprenticeship.title" :title="apprenticeship.title" target="_blank"
+                            class="cert-link">{{ apprenticeship.title }}</a></h5>
+                    <h5 v-else">{{ apprenticeship.title }}</h5>
                     <p><strong>{{ apprenticeship.company }}</strong>, {{ apprenticeship.address }}</p>
                     <cite v-if="apprenticeship.finalNote !== 0 && apprenticeship.finalNote !== ''">Abschluss-Note: {{
                         apprenticeship.finalNote }}</cite>
@@ -91,7 +108,10 @@
                     <p>{{ study.duration }}</p>
                 </div>
                 <div class="job-column">
-                    <h5>{{ study.title }}</h5>
+                    <h5 v-if="study.certificate"><a :href="study.certificate" :alt="study.title + '@' + study.institute"
+                            :title="study.title + '@' + study.institute" target="_blank" class="cert-link">{{
+                            study.title }}</a></h5>
+                    <h5 v-else>{{ study.title }}</h5>
                     <p><strong>{{ study.institute }}</strong></p>
                     <ul class="task-list" v-if="study.skills !== []">
                         <li v-for="skill in study.skills" :key="skill">{{ skill }}</li>
@@ -119,7 +139,11 @@
                     <p><strong>{{ language.language }}</strong></p>
                 </div>
                 <div class="job-column">
-                    <h5>{{ language.ger }}</h5>
+                    <h5 v-if="language.certificate"><a :href="language.certificate"
+                            :alt="language.language + ': ' + language.ger"
+                            :title="language.language + ': ' + language.ger" target="_blank" class="cert-link">{{
+                            language.ger }}</a></h5>
+                    <h5 v-else>{{ language.ger }}</h5>
                     <ul class="task-list">
                         <li v-for="item in language.description" :key="item">{{ item }}</li>
                     </ul>
