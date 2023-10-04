@@ -32,6 +32,7 @@ const app = Vue.createApp({
             "Telefon-Akquise von Zeitungsanzeigen",
             "Versenden von Angeboten",
           ],
+          certificate: "img/certificates/work/StadtspiegelDortmund.pdf",
         },
         {
           id: 2,
@@ -55,6 +56,7 @@ const app = Vue.createApp({
             "Auswertung des Schriftverkehrs",
             "Entwurf von Marketing-Materialien",
           ],
+          certificate: "img/certificates/work/BusinessPartnerSystems.pdf",
         },
         {
           id: 4,
@@ -68,6 +70,7 @@ const app = Vue.createApp({
             "Farbkorrekturen",
             "Originalmontage bis zum Endfilm",
           ],
+          certificate: "img/certificates/work/HilpertGmbH&CoKG.pdf",
         },
       ],
       h3free: "Freiberufliche Tätigkeiten",
@@ -113,6 +116,7 @@ const app = Vue.createApp({
             "Bildbearbeitung",
             "Seitenlayout",
           ],
+          certificate: "img/certificates/work/PadaRii.pdf",
         },
       ],
       h3practica: "Betriebs-Praktika",
@@ -124,6 +128,7 @@ const app = Vue.createApp({
           company: "W+B GmbH",
           address: "Grafenberger Allee 32, 40237 Düsseldorf",
           tasks: ["Bildbearbeitung", "Bild-Text-Composing", "Layout"],
+          certificate: "img/certificates/work/W+B.pdf",
         },
         {
           id: 2,
@@ -140,6 +145,7 @@ const app = Vue.createApp({
             "Videofilm, Videonachbearbeitung für medizinische Dokumentationen",
             "Webdesign mittels Dreamweaver",
           ],
+          certificate: "img/certificates/work/BergmannsheilBochum.pdf",
         },
       ],
       h2education: "Ausbildung",
@@ -152,6 +158,7 @@ const app = Vue.createApp({
           company: "Hilpert GmbH & Co.KG",
           address: "Girardetstraße 58-64, 45131 Essen",
           finalNote: 2.0,
+          certificate: "img/certificates/apprenticeship/GesellenBrief.pdf",
         },
       ],
       h3study: "Weiterbildung",
@@ -192,6 +199,8 @@ const app = Vue.createApp({
             "Accessibility",
             "Agile Projektorganisation",
           ],
+          certificate:
+            "img/certificates/apprenticeship/CodingBootcampsEurope_Zertifikat_Kirsten-Anders.pdf",
         },
         {
           id: 3,
@@ -207,6 +216,7 @@ const app = Vue.createApp({
             "Tabellen-Kalkulation",
             "E-Mail-, Termin- und Kontakt-Management",
           ],
+          certificate: "img/certificates/apprenticeship/Gesamt_Zertifikat#.pdf",
         },
         {
           id: 4,
@@ -221,6 +231,7 @@ const app = Vue.createApp({
             "Auftragsbearbeitung",
             "Personalwesen",
           ],
+          certificate: "img/certificates/apprenticeship/ProfiTrain#.pdf",
         },
         {
           id: 5,
@@ -234,6 +245,8 @@ const app = Vue.createApp({
             "Conversation in Business",
             "Telephoning",
           ],
+          certificate:
+            "img/certificates/apprenticeship/WirtschaftsEnglisch#.pdf",
         },
         {
           id: 6,
@@ -248,6 +261,8 @@ const app = Vue.createApp({
             "Javascript",
             "Bildanimation mit GL Flash",
           ],
+          certificate:
+            "img/certificates/apprenticeship/WBSTraining_WebDeveloper#.pdf",
         },
         {
           id: 7,
@@ -265,6 +280,8 @@ const app = Vue.createApp({
             "Bildbearbeitung mit Photoshop",
             "Medienrecht",
           ],
+          certificate:
+            "img/certificates/apprenticeship/TAWBochum_MedienEntwickler_BildGrafik#.pdf",
         },
         {
           id: 8,
@@ -279,6 +296,8 @@ const app = Vue.createApp({
             "Administration",
             "Web-Design",
           ],
+          certificate:
+            "img/certificates/apprenticeship/AIT_ScreenDesigner_WebMaster.pdf",
         },
         {
           id: 9,
@@ -295,6 +314,8 @@ const app = Vue.createApp({
             "QuarkXPress 3.32",
             "Photoshop 3.05",
           ],
+          certificate:
+            "img/certificates/apprenticeship/InMedia_Koeln_DTP-Druckvorstufengewerbe.pdf",
         },
         {
           id: 10,
@@ -312,6 +333,8 @@ const app = Vue.createApp({
             "Personalwirtschaft und Soziologie / Politik",
             "Fach-Englisch, Kommunikation",
           ],
+          certificate:
+            "img/certificates/apprenticeship/ADS_TechnikerSchule.pdf",
         },
         {
           id: 11,
@@ -328,6 +351,7 @@ const app = Vue.createApp({
             "Allgemeine Fertigungstechnik, Spezielle Fertigungstechnik",
             "Kalkulation",
           ],
+          certificate: "img/certificates/apprenticeship/Meisterbrief.pdf",
         },
         {
           id: 12,
@@ -342,6 +366,7 @@ const app = Vue.createApp({
             "Rechtsgrundlagen in der Berufsbildung",
             "Praktisch durchzuführende Unterweisung",
           ],
+          certificate: "img/certificates/apprenticeship/AusbilderSchein.pdf",
         },
       ],
       h2school: "Schulbildung",
@@ -382,6 +407,8 @@ const app = Vue.createApp({
             "kann beim Lesen komplexe Texte im Detail verstehen, auch wenn diese nicht dem eigenen Spezialgebiet angehören",
             "kann gesprochene Sprache verstehen, auch wenn diese nicht klar strukturiert ist und wenn Zusammenhänge nicht explizit ausgedrückt sind",
           ],
+          certificate:
+            "img/certificates/languages/Sprachtest-Certificate-Deutsch-Kirsten-Anders.pdf",
         },
         {
           id: 2,
@@ -394,6 +421,8 @@ const app = Vue.createApp({
             "kann beim Lesen unkomplizierte Sachtexte und Korrespondenz recht gut verstehen, in denen sehr gebräuchliche Alltags- oder Berufssprache vorkommt, z. B. Briefe oder Informationsbroschüren",
             "kann in der Regel bei Gesprächen oder Radionachrichten die Hauptpunkte verstehen, sofern deutlich gesprochen wird",
           ],
+          certificate:
+            "img/certificates/languages/Sprachtest-Certificate-Englisch-Kirsten-Anders.pdf",
         },
       ],
       h2skills: "Besondere Kenntnisse",
