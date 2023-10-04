@@ -124,6 +124,18 @@ a:hover {
   transform: translateX(0.5rem);
 }
 
+a.cert-link {
+  display: inline;
+  color: #000066;
+  transition: color 0.5s ease-in-out;
+}
+
+a.cert-link:hover {
+  color: #0000ab;
+  background-color: transparent;
+  transform: none;
+}
+
 #personalia > p > a:hover {
   background-color: transparent;
   transform: none;
