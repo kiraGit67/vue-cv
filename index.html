@@ -46,8 +46,8 @@
             </ul>
         </nav>
         <main>
-            <h2 id="positions">{{h2positions}} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
-            <h3 id="dependentJobs">{{h3jobs}} <a class="backlink" href="#personalia">&gt;&gt;</a></h3>
+            <h2 id="positions">{{h2positions}} <a class="backlink" href="#app">&gt;&gt;</a></h2>
+            <h3 id="dependentJobs">{{h3jobs}} <a class="backlink" href="#app">&gt;&gt;</a></h3>
             <div class="job-container" :class="{'first':job.id===1}" v-for="job in dependentJobs" :key="job.id">
                 <div class="duration-column">
                     <p>{{job.duration}}</p>
@@ -64,7 +64,7 @@
                     </ul>
                 </div>
             </div>
-            <h3 id="freeJobs">{{h3free}} <a class="backlink" href="#personalia">&gt;&gt;</a></h3>
+            <h3 id="freeJobs">{{h3free}} <a class="backlink" href="#app">&gt;&gt;</a></h3>
             <div class="job-container" :class="{'first':job.id===1}" v-for="job in freeJobs" :key="job.id">
                 <div class="duration-column">
                     <p>{{job.duration}}</p>
@@ -84,7 +84,7 @@
                     </ul>
                 </div>
             </div>
-            <h3 id="practica">{{h3practica}} <a class="backlink" href="#personalia">&gt;&gt;</a></h3>
+            <h3 id="practica">{{h3practica}} <a class="backlink" href="#app">&gt;&gt;</a></h3>
             <div class="job-container" :class="{'first':praktikum.id===1}" v-for="praktikum in praktika"
                 :key="praktikum.id">
                 <div class="duration-column">
@@ -104,8 +104,8 @@
                     </ul>
                 </div>
             </div>
-            <h2 id="education">{{ h2education }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
-            <h3 id="apprenticeship">{{ h3apprenticeship }} <a class="backlink" href="#personalia">&gt;&gt;</a></h3>
+            <h2 id="education">{{ h2education }} <a class="backlink" href="#app">&gt;&gt;</a></h2>
+            <h3 id="apprenticeship">{{ h3apprenticeship }} <a class="backlink" href="#app">&gt;&gt;</a></h3>
             <div class="job-container" :class="{'first':apprenticeship.id===1}"
                 v-for="apprenticeship in apprenticeships" :key="apprenticeship.id">
                 <div class="duration-column">
@@ -121,7 +121,7 @@
                         apprenticeship.finalNote }}</cite>
                 </div>
             </div>
-            <h3 id="studies">{{ h3study }} <a class="backlink" href="#personalia">&gt;&gt;</a></h3>
+            <h3 id="studies">{{ h3study }} <a class="backlink" href="#app">&gt;&gt;</a></h3>
             <div class="job-container" :class="{'first':study.id===1}" v-for="study in studies" :key="study.id">
                 <div class="duration-column">
                     <p>{{ study.duration }}</p>
@@ -139,7 +139,7 @@
                         }}</cite>
                 </div>
             </div>
-            <h2 id="schools">{{ h2school }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
+            <h2 id="schools">{{ h2school }} <a class="backlink" href="#app">&gt;&gt;</a></h2>
             <div class="job-container" :class="{'first':school.id===1}" v-for="school in schools" :key="school.id">
                 <div class="duration-column">
                     <p>{{ school.duration }}</p>
@@ -151,7 +151,7 @@
                         }}</cite>
                 </div>
             </div>
-            <h2 id="languages">{{ h2lang }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
+            <h2 id="languages">{{ h2lang }} <a class="backlink" href="#app">&gt;&gt;</a></h2>
             <p>Nach dem gemeinsamen europäischen Referenzrahmen für Sprachen (GER)</p>
             <div class="job-container" v-for="language in languages" :key="language.id">
                 <div class="duration-column">
@@ -168,7 +168,7 @@
                     </ul>
                 </div>
             </div>
-            <h2 id="skills">{{ h2skills }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
+            <h2 id="skills">{{ h2skills }} <a class="backlink" href="#app">&gt;&gt;</a></h2>
             <div class="job-container" v-for="skill in skills" :key="skill.id"
                 :class="[{'first':skill.id===1},{'centered':skill.id===2}]">
                 <div class="duration-column">
@@ -179,7 +179,7 @@
                     <a :href="skill.link" target="_blank" v-if="skill.link!==''">{{ skill.link }}</a>
                 </div>
             </div>
-            <h2 id="profiles">{{ h2profiles }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
+            <h2 id="profiles">{{ h2profiles }} <a class="backlink" href="#app">&gt;&gt;</a></h2>
             <div class="job-container centered" v-for="profile in profiles" :key="profile.id"
                 :class="{'first':profile.id===1}">
                 <div class="duration-column">
@@ -189,7 +189,7 @@
                     <p><strong><a :href="profile.link" target="_blank">{{ profile.link }}</a></strong></p>
                 </div>
             </div>
-            <h2 id="projects">{{ h2projects }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
+            <h2 id="projects">{{ h2projects }} <a class="backlink" href="#app">&gt;&gt;</a></h2>
             <div class="job-container" v-for="project in projects" :key="project.id" :class="{'first':project.id===1}">
                 <div class="duration-column">
                     <img :src="project.imgSource" :alt="project.name" :title="project.name">
@@ -202,7 +202,7 @@
                         :class="[{'capp-color':project.id===1}, {'sgev-color':project.id===2}]">{{ project.link }}</a>
                 </div>
             </div>
-            <h2 id="hobbies">{{ h2hobbies }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
+            <h2 id="hobbies">{{ h2hobbies }} <a class="backlink" href="#app">&gt;&gt;</a></h2>
             <div class="job-container" v-for="hobby in hobbies" :key="hobby.id" :class="{'first':hobby.id===1}">
                 <div class="duration-column">
                     <p>{{ hobby.duration }}</p>
