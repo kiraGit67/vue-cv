@@ -40,7 +40,8 @@
         </nav>
         <nav id="mobile-menu" v-if="showMobileMenu">
             <ul>
-                <li v-for="navItem in navItems" :key="navItem.id"><a :href="'#' + navItem.anchorID">{{navItem.name}}</a>
+                <li v-for="navItem in navItems" :key="navItem.id"><a :href="'#' + navItem.anchorID"
+                        @click="showMobileMenu=false">{{navItem.name}}</a>
                 </li>
             </ul>
         </nav>
