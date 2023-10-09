@@ -136,6 +136,21 @@ a.cert-link:hover {
   transform: none;
 }
 
+a.backlink {
+  color: rgba(0, 0, 51, 0.35);
+  display: inline-block;
+  float: right;
+  font-size: 1rem;
+  transition: color 0.5s ease-in-out;
+}
+
+a.backlink:hover {
+  color: #0000cc;
+  text-decoration: none;
+  transform: none;
+  background-color: transparent;
+}
+
 #personalia > p > a:hover {
   background-color: transparent;
   transform: none;
@@ -172,6 +187,10 @@ a.sgev-color:hover {
       white 55% 56.5%,
       rgba(0, 0, 0, 0.05) 56.5%
     );
+  }
+
+  #personalia {
+    scroll-behavior: smooth;
   }
 
   .job-container {
