@@ -26,6 +26,12 @@
                     :alt="personalData.firstName + ' ' + personalData.lastName + ', ' + personalData.title"
                     :title="personalData.firstName + ' ' + personalData.lastName + ', ' + personalData.title"></div>
         </header>
+        <nav id="navigation">
+            <ul>
+                <li v-for="navItem in navItems" :key="navItem.id"><a :href="'#' + navItem.anchorID">{{navItem.name}}</a>
+                </li>
+            </ul>
+        </nav>
         <main>
             <h2 id="positions">{{h2positions}} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
             <h3 id="dependentJobs">{{h3jobs}} <a class="backlink" href="#personalia">&gt;&gt;</a></h3>
@@ -170,16 +176,6 @@
                     <p><strong><a :href="profile.link" target="_blank">{{ profile.link }}</a></strong></p>
                 </div>
             </div>
-            <h2 id="hobbies">{{ h2hobbies }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
-            <div class="job-container" v-for="hobby in hobbies" :key="hobby.id" :class="{'first':hobby.id===1}">
-                <div class="duration-column">
-                    <p>{{ hobby.duration }}</p>
-                </div>
-                <div class="job-column">
-                    <h5>{{ hobby.name }}</h5>
-                    <p><strong>{{ hobby.description }}</strong></p>
-                </div>
-            </div>
             <h2 id="projects">{{ h2projects }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
             <div class="job-container" v-for="project in projects" :key="project.id" :class="{'first':project.id===1}">
                 <div class="duration-column">
@@ -193,6 +189,17 @@
                         :class="[{'capp-color':project.id===1}, {'sgev-color':project.id===2}]">{{ project.link }}</a>
                 </div>
             </div>
+            <h2 id="hobbies">{{ h2hobbies }} <a class="backlink" href="#personalia">&gt;&gt;</a></h2>
+            <div class="job-container" v-for="hobby in hobbies" :key="hobby.id" :class="{'first':hobby.id===1}">
+                <div class="duration-column">
+                    <p>{{ hobby.duration }}</p>
+                </div>
+                <div class="job-column">
+                    <h5>{{ hobby.name }}</h5>
+                    <p><strong>{{ hobby.description }}</strong></p>
+                </div>
+            </div>
+
         </main>
     </div>
     <script src="vue.js"></script>
