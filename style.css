@@ -296,7 +296,10 @@ a.sgev-color:hover {
     display: block;
     margin: 0;
     background-color: #0000ab;
-    padding: 0.25rem 0.35rem 0.1rem 0.35rem;
+    padding: 0.75rem 0.5rem 0.5rem 0.5rem;
+    border-top: 1px solid #000033;
+    border-bottom: 1px solid #000033;
+    box-shadow: 0 5px 15px rgba(0, 0, 51, 0.5);
   }
 
   #navigation > ul {
