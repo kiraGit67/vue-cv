@@ -3,6 +3,48 @@ const app = Vue.createApp({
     return {
       h1text: "Lebenslauf",
       h2positions: "Beruflicher Werdegang",
+      navItems: [
+        {
+          id: 1,
+          name: "Beruflicher Werdegang",
+          anchorID: "positions",
+        },
+        {
+          id: 2,
+          name: "Ausbildung",
+          anchorID: "education",
+        },
+        {
+          id: 3,
+          name: "Schulbildung",
+          anchorID: "schools",
+        },
+        {
+          id: 4,
+          name: "Sprachen",
+          anchorID: "languages",
+        },
+        {
+          id: 5,
+          name: "Skills",
+          anchorID: "skills",
+        },
+        {
+          id: 6,
+          name: "Profile",
+          anchorID: "profiles",
+        },
+        {
+          id: 7,
+          name: "Projekte",
+          anchorID: "projects",
+        },
+        {
+          id: 8,
+          name: "Interessen",
+          anchorID: "hobbies",
+        },
+      ],
       personalData: {
         title: "Web-Anwendungsentwicklerin (Frontend/Backend)",
         firstName: "Kirsten",
