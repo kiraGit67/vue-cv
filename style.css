@@ -49,6 +49,13 @@ header img {
   outline: 1px solid lightgrey;
 }
 
+header > #photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
 #navigation {
   display: none;
 }
@@ -233,6 +240,10 @@ a.sgev-color:hover {
       white 60% 61.5%,
       rgba(0, 0, 0, 0.05) 61.5%
     );
+  }
+
+  header > #photo > svg {
+    display: none;
   }
 
   #navigation {
