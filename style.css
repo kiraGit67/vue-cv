@@ -54,6 +54,12 @@ header img {
 }
 
 h2,
+h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2,
 h3,
 h5 {
   font-weight: 500;
@@ -143,7 +149,6 @@ a.cert-link:hover {
 a.backlink {
   color: rgba(0, 0, 51, 0.35);
   display: inline-block;
-  float: right;
   font-size: 1rem;
   transition: color 0.5s ease-in-out;
 }
