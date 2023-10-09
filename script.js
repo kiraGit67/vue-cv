@@ -45,6 +45,7 @@ const app = Vue.createApp({
           anchorID: "hobbies",
         },
       ],
+      showMobileMenu: true,
       personalData: {
         title: "Web-Anwendungsentwicklerin (Frontend/Backend)",
         firstName: "Kirsten",
