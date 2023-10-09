@@ -49,6 +49,10 @@ header img {
   outline: 1px solid lightgrey;
 }
 
+#navigation {
+  display: none;
+}
+
 h2,
 h3,
 h5 {
@@ -224,5 +228,31 @@ a.sgev-color:hover {
       white 60% 61.5%,
       rgba(0, 0, 0, 0.05) 61.5%
     );
+  }
+
+  #navigation {
+    display: block;
+    margin: 0;
+    background-color: #0000ab;
+    padding: 0.25rem 0.35rem 0.1rem 0.35rem;
+  }
+
+  #navigation > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #navigation > ul > li > a {
+    color: white;
+    transition: color 0.5s ease-in-out;
+  }
+
+  #navigation > ul > li > a:hover {
+    color: #f90;
+    transform: none;
+    background-color: transparent;
   }
 }
